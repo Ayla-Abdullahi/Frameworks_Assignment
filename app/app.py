@@ -28,7 +28,7 @@ def load_data(file_path):
 # -----------------------------
 # File path
 # -----------------------------
-file_path = "../data/metadata.csv"
+file_path = "../data/metadata_sample.csv"
 df = load_data(file_path)
 
 # -----------------------------
@@ -102,6 +102,7 @@ if 'source_x' in df_filtered.columns:
     st.pyplot(fig)
 else:
     st.write("Column 'source_x' not found in dataset.")
+    # the papers by Source wont show as the sample metadata is too shalow for it.
 
 # -----------------------------
 # Word Cloud of Titles
